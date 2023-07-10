@@ -1,4 +1,5 @@
 body {
+  text-align: center;
   background-color: bisque;
   width: 100%;
   margin: 0;
@@ -18,37 +19,43 @@ code {
 {
   background-color: inherit;
   height: 100%;
+  width: 100%;
 
 }
 .coverMain{
-  border-radius: 80px;
+  border-radius: 0px 0px 80px 80px;
+  width: 100%;
   height: 750px;
   background-image: url("img/cover.jpg");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
   overflow-x: hidden;
 }
 .navbarMain
 {
-  width: 100%;
+  float: right;
+  width: 92%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   
 }
 .logo
 {
-  width:10%;  
+  float: left;
+  width:8%;  
 }
 .navAnc
 {
   display: flex;
 
-  margin: 0px 2%;
+  margin: 0px 1%;
 }
 .navAnc > a
 {
-
-  font-size: 1.4em;
+  font-weight: bold;
+  font-size: 1.2em;
   padding-top: 50px;
   margin: 0px 2%;
   text-decoration: none;
@@ -62,14 +69,14 @@ code {
 .navBut
 {
   display: flex;
-  margin: 0px 4%;
+  margin: 0px 2%;
   justify-content: space-between;
 }
 .navBut > button{
   background-color: rgba(0, 0, 0, 0.5);
   border: 2px 2px solid darkgrey;
   color: azure;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   border-radius:25px;
   height: 60px;
   width: 180px;
@@ -79,8 +86,17 @@ code {
   background-color: rgba(255, 255, 255, 0.5);
   color: black;
 }
+.dropdown
+{
+  display: none;
+
+}
+.dropdown > img {
+  width: 50px;
+}
 .coverTitle
 {
+    clear: both;
 }
 .coverTitle > h1
 {
@@ -90,7 +106,7 @@ code {
 }
 .coverTitle > h1:hover
 {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.2s;
 }
 .coverTitle > p
@@ -116,10 +132,13 @@ code {
 }
 .menuMain
 {
-  margin-top: -125px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
   justify-content: space-around;
-  width: 100%;
+  gap:3%;
+  row-gap: 100px;
+  width: 92%;
+  margin: -125px 4% 0px;
 }
 .menuCard
 {
@@ -127,7 +146,149 @@ code {
   justify-content: center;
   align-items: center;
   background-color: white;
-  width:15%;
   height: 250px;
   border-radius: 40px;
+}
+
+@media (max-width:1200px)
+{  .coverMain{
+  width: 100%;
+  background-size: 100% 100%;
+  height: 500px;
+}
+.coverTitle > h1
+{
+  font-size: 3em;
+  color: rgba(68, 56, 45, 0.927);
+  transition: 0.2s;
+}
+
+  .coverTitle > h1:hover
+{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+.coverTitle > p
+{
+  font-size: 1.0em;
+  font-weight: bold;
+  text-shadow: 1px 1px rgb(65, 62, 58);
+}
+.coverTitle > button
+{
+  background-color: navy;
+  border: 2px 2px solid rgb(239,152,12);
+  font-size: 1.2em;
+  border-radius:25px;
+  height: 40px;
+  width: 200px;
+  color: white;
+}
+  .navAnc,.navBut{
+    display: none;
+  }
+  .dropdown {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    padding: 10px 0;
+    min-width: 160px;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: rgb(150, 116, 88);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: rgb(114, 101, 91);
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1;
+  }
+  .dropdown-content > a,.dropdown-content > button{
+    align-items: center;
+    text-decoration:none;
+    color: bisque;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+@media (min-width:992px) and (max-width:1200px)
+{
+
+  .menuMain
+  {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    justify-content: space-around;
+    
+    
+
+  }
+}
+
+
+
+@media (min-width:700px) and (max-width:991px)
+{
+  .coverTitle > h1
+{
+  font-size: 3em;
+  color: rgba(68, 56, 45, 0.927);
+  transition: 0.2s;
+}
+
+  .coverTitle > h1:hover
+{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+.coverTitle > p
+{
+  font-size: 1.0em;
+  font-weight: bold;
+  text-shadow: 1px 1px rgb(65, 62, 58);
+}
+.coverTitle > button
+{
+  background-color: navy;
+  border: 2px 2px solid rgb(239,152,12);
+  font-size: 1.2em;
+  border-radius:25px;
+  height: 40px;
+  width: 200px;
+  color: white;
+}  .menuMain
+{
+  display: grid;
+  grid-template-columns: 250px 250px;
+  justify-content: space-around;
+}
+}
+
+
+@media (max-width:699px)
+{
+  .logo
+  {
+    width:50px;
+  }
+  .menuMain
+  {
+    display: grid;
+    grid-template-columns: 500px;
+    justify-content: space-around;
+
+  }
+  .dropdown
+  {
+    right: 10px;
+    min-width: 100px;
+  }
+
 }
