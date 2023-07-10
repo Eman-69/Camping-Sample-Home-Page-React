@@ -21,7 +21,13 @@ export default function Cover(){
                 <button>Sign-up</button>
             </div>
         </nav>
-        <h1 className="coverTitle">Find Yourself <br/> Outside</h1>
+        <div className="coverTitle">
+            <h1>Find Yourself <br/> Outside</h1>
+            <p>
+                Book unique camping experiences along with rafting and much more,<br/>dont await and book your slots.
+            </p>
+            <button>Book Now</button>
+        </div>
     </div>
     );
 
