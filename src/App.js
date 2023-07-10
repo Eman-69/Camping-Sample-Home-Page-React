@@ -1,11 +1,16 @@
 
 import './App.css';
+import Cover from './components/cover';
+import Menu from './components/menu';
+import React from 'react';
+import { ReactDOM } from 'react';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
+      <Cover/>
+      <Menu/>
     </div>
   );
 }
 
-export default App;
