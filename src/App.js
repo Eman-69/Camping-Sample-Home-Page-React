@@ -8,8 +8,10 @@ import { ReactDOM } from 'react';
 export default function App() {
   return (
     <div className="App">
-      <Cover/>
-      <Menu/>
+      <div className='main'>
+        <Cover/>
+        <Menu/>
+      </div>
     </div>
   );
 }
