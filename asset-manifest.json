@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/exelon1/static/css/main.d8dc1fae.css",
-    "main.js": "/exelon1/static/js/main.8df07cb2.js",
+    "main.css": "/exelon1/static/css/main.668c0d45.css",
+    "main.js": "/exelon1/static/js/main.0d8e0672.js",
     "static/js/787.90d04b04.chunk.js": "/exelon1/static/js/787.90d04b04.chunk.js",
     "static/media/cover.jpg": "/exelon1/static/media/cover.407a015b8392c278e7b8.jpg",
     "static/media/logo.png": "/exelon1/static/media/logo.1f186bf22e8518bf7dd5.png",
+    "static/media/menu.svg": "/exelon1/static/media/menu.8655d0bc72078872ccf61c118ca4c027.svg",
     "index.html": "/exelon1/index.html",
-    "main.d8dc1fae.css.map": "/exelon1/static/css/main.d8dc1fae.css.map",
-    "main.8df07cb2.js.map": "/exelon1/static/js/main.8df07cb2.js.map",
+    "main.668c0d45.css.map": "/exelon1/static/css/main.668c0d45.css.map",
+    "main.0d8e0672.js.map": "/exelon1/static/js/main.0d8e0672.js.map",
     "787.90d04b04.chunk.js.map": "/exelon1/static/js/787.90d04b04.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8dc1fae.css",
-    "static/js/main.8df07cb2.js"
+    "static/css/main.668c0d45.css",
+    "static/js/main.0d8e0672.js"
   ]
 }
