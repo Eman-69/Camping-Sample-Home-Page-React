@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/exelon1/static/css/main.073c9b0a.css",
-    "main.js": "/exelon1/static/js/main.9a4b14ff.js",
+    "main.js": "/exelon1/static/js/main.aff4b2c1.js",
     "static/js/787.90d04b04.chunk.js": "/exelon1/static/js/787.90d04b04.chunk.js",
     "index.html": "/exelon1/index.html",
     "main.073c9b0a.css.map": "/exelon1/static/css/main.073c9b0a.css.map",
-    "main.9a4b14ff.js.map": "/exelon1/static/js/main.9a4b14ff.js.map",
+    "main.aff4b2c1.js.map": "/exelon1/static/js/main.aff4b2c1.js.map",
     "787.90d04b04.chunk.js.map": "/exelon1/static/js/787.90d04b04.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.9a4b14ff.js"
+    "static/js/main.aff4b2c1.js"
   ]
 }
