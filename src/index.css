@@ -102,13 +102,8 @@ code {
 {
   font-size: 5em;
   color: rgba(68, 56, 45, 0.927);
-  transition: 0.2s;
 }
-.coverTitle > h1:hover
-{
-  transform: scale(1.1);
-  transition: 0.2s;
-}
+
 .coverTitle > p
 {
   font-size: 1.4em;
@@ -160,14 +155,10 @@ code {
 {
   font-size: 3em;
   color: rgba(68, 56, 45, 0.927);
-  transition: 0.2s;
+
 }
 
-  .coverTitle > h1:hover
-{
-  transform: scale(1.1);
-  transition: 0.2s;
-}
+
 .coverTitle > p
 {
   font-size: 1.0em;
@@ -240,14 +231,9 @@ code {
 {
   font-size: 3em;
   color: rgba(68, 56, 45, 0.927);
-  transition: 0.2s;
 }
 
-  .coverTitle > h1:hover
-{
-  transform: scale(1.1);
-  transition: 0.2s;
-}
+
 .coverTitle > p
 {
   font-size: 1.0em;
@@ -263,7 +249,8 @@ code {
   height: 40px;
   width: 200px;
   color: white;
-}  .menuMain
+}  
+.menuMain
 {
   display: grid;
   grid-template-columns: 250px 250px;
@@ -272,8 +259,31 @@ code {
 }
 
 
-@media (max-width:699px)
-{
+@media(max-width:699px)
+{  .coverTitle > h1
+  {
+    font-size: 1em;
+    color: rgba(68, 56, 45, 0.927);
+
+  }
+  
+
+  .coverTitle > p
+  {
+    font-size: 0.7em;
+    font-weight: bold;
+    text-shadow: 1px 1px rgb(65, 62, 58);
+  }
+  .coverTitle > button
+  {
+    background-color: navy;
+    border: 2px 2px solid rgb(239,152,12);
+    font-size: 1.0em;
+    border-radius:25px;
+    height: 40px;
+    width: 100px;
+    color: white;
+  }  
   .logo
   {
     width:50px;
@@ -281,7 +291,7 @@ code {
   .menuMain
   {
     display: grid;
-    grid-template-columns: 500px;
+    grid-template-columns: 90%;
     justify-content: space-around;
 
   }
